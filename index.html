@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Agrinho 2025 - Campo e Cidade</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -16,6 +16,8 @@
     <ul>
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#atividades">Atividades</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#eventos">Eventos</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
   </nav>
@@ -23,22 +25,53 @@
   <main>
     <section id="sobre">
       <h2>Sobre o Agrinho 2025</h2>
-      <p>O Agrinho 2025 celebra a integração entre o campo e a cidade, destacando a importância da cooperação, da sustentabilidade e da valorização da cultura rural e urbana.</p>
+      <img src="https://via.placeholder.com/800x300?text=Agrinho+2025" alt="Imagem do Agrinho 2025" style="width:100%;margin:1rem 0;border-radius:8px;">
+      <p>O Agrinho é um dos maiores programas de responsabilidade social do Brasil. Em 2025, o tema é "Festejando a Conexão Campo-Cidade", destacando a importância de valorizar os saberes e culturas do meio rural e urbano em um só movimento.</p>
     </section>
 
     <section id="atividades">
       <h2>Atividades</h2>
       <ul>
-        <li>Oficinas educativas</li>
-        <li>Feiras de produtos locais</li>
-        <li>Exposições culturais</li>
-        <li>Apresentações artísticas</li>
+        <li>Oficinas educativas sobre sustentabilidade</li>
+        <li>Feiras de produtos orgânicos e artesanato local</li>
+        <li>Apresentações culturais com artistas da cidade e do campo</li>
+        <li>Exposições tecnológicas sobre agricultura e inovação</li>
+      </ul>
+    </section>
+
+    <section id="galeria">
+      <h2>Galeria de Fotos</h2>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <img src="https://via.placeholder.com/200?text=Campo" alt="Campo" style="width:200px; border-radius: 8px;">
+        <img src="https://via.placeholder.com/200?text=Cidade" alt="Cidade" style="width:200px; border-radius: 8px;">
+        <img src="https://via.placeholder.com/200?text=Feira" alt="Feira" style="width:200px; border-radius: 8px;">
+      </div>
+    </section>
+
+    <section id="eventos">
+      <h2>Linha do Tempo de Eventos</h2>
+      <ul>
+        <li><strong>Março:</strong> Abertura oficial e lançamento do tema</li>
+        <li><strong>Maio:</strong> Início das atividades nas escolas</li>
+        <li><strong>Julho:</strong> Feira Cultural no Parque Municipal</li>
+        <li><strong>Outubro:</strong> Encerramento com premiação de projetos</li>
       </ul>
     </section>
 
     <section id="contato">
-      <h2>Contato</h2>
-      <p>Entre em contato conosco pelo e-mail: <a href="mailto:agrinho2025@exemplo.com">agrinho2025@exemplo.com</a></p>
+      <h2>Fale Conosco</h2>
+      <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   </main>
 
