@@ -1,65 +1,142 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Estilos Gerais */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f0f8e2;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
   color: #333;
 }
 
 header {
-  background-color: #4caf50;
+  background-color: #4CAF50;
   color: white;
-  text-align: center;
   padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
 }
 
 nav {
-  background-color: #388e3c;
+  background-color: #333;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
-  padding: 0.5rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav li {
-  margin: 0 1rem;
+nav ul li {
+  margin: 0.5rem 1rem;
 }
 
-nav a {
+nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 1.1rem;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav ul li a:hover {
+  color: #4CAF50;
 }
 
 main {
   padding: 2rem;
+  background-color: white;
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 8px;
 }
 
-section {
-  margin-bottom: 2rem;
-}
-
+/* Estilos de Seções */
 h2 {
-  color: #2e7d32;
+  color: #4CAF50;
+  margin-bottom: 1rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+ul {
+  list-style-type: square;
+  margin: 0;
+  padding-left: 1.5rem;
 }
 
 footer {
-  background-color: #2e7d32;
+  background-color: #333;
   color: white;
   text-align: center;
   padding: 1rem;
+  margin-top: 2rem;
 }
 
-    
+footer p {
+  margin: 0;
+}
+
+/* Galeria de Fotos */
+.gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 30%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Estilos do Formulário */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form-container label {
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container button {
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.form-container button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+.form-container textarea {
+  resize: vertical;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .gallery img {
+    width: 100%;
+  }
+}
